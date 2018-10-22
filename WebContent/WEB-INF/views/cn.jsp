@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>Imprimiendo Vector con JSTL y EL</h1>
+	<c:forEach items="${application.getAttribute('vector')}" var="value">
+      		<c:out value="1"/></br>
+      </c:forEach>  
 
 </body>
 </html>

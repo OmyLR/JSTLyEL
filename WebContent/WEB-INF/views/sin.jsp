@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="java.util.ArrayList" %>
+    <%@page import="java.util.*" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +22,15 @@
 		ArrayList<Object> array = (ArrayList<Object>)application.getAttribute("array");
 		for(int i=0; i<array.size(); i++){
 			out.println(array.get(i)+"</br>");
+		}
+	%>
+	
+	<h1>Imprimiendo HashMap de Objects</h1>
+	<%
+
+		HashMap<String, Object> hash = (HashMap<String, Object>)application.getAttribute("hashmap");
+		for(String key : hash.keySet()){
+			out.println(hash.get(key)+"</br>");
 		}
 	%>
 </body>

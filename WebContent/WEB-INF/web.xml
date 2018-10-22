@@ -25,4 +25,12 @@
   	<servlet-name>Sin</servlet-name>
   	<url-pattern>/sin</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>Con</servlet-name>
+  	<jsp-file>/WEB-INF/views/cn.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Con</servlet-name>
+  	<url-pattern>/con</url-pattern>
+  	</servlet-mapping>
 </web-app>

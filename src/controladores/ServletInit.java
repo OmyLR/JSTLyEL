@@ -2,6 +2,7 @@ package controladores;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -66,6 +67,13 @@ public class ServletInit extends HttpServlet {
 		array.add('T');
 		array.add("cuatro");
 		getServletContext().setAttribute("array", array);
+		HashMap<String, Object> hash = new HashMap<String, Object>();
+		hash.put("cero", "cero");
+		hash.put("uno", 1);
+		hash.put("dos", 0.2);
+		hash.put("tres", 'T');
+		hash.put("Cuatro", "cuatro");
+		getServletContext().setAttribute("hashmap", hash);
 		System.out.println("Iniciando Servlet");
 	}
 	
