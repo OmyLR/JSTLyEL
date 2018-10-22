@@ -28,7 +28,14 @@ public class ServletInit extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String tipo = (String) request.getParameter("tipo");
-		System.out.println(tipo);
+		switch(tipo) {
+			case "sin":
+				redirect(response, "sin");
+				break;
+			case "con":
+				redirect(response, "con");
+				break;
+		}
 	}
 
 	/**
@@ -51,6 +58,10 @@ public class ServletInit extends HttpServlet {
 		objects[4] = "cuatro";
 		getServletContext().setAttribute("vector", objects);
 		System.out.println("Iniciando Servlet");
+	}
+	
+	private void redirect(HttpServletResponse response, String ruta) throws IOException {
+		response.sendRedirect(ruta);
 	}
 
 }

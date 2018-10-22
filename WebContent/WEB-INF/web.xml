@@ -17,4 +17,12 @@
     <servlet-name>ServletInit</servlet-name>
     <url-pattern>/servlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>Sin</servlet-name>
+  	<jsp-file>/WEB-INF/views/sin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Sin</servlet-name>
+  	<url-pattern>/sin</url-pattern>
+  </servlet-mapping>
 </web-app>

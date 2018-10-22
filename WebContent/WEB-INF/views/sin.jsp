@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<%
+		Object[] objects = (Object[])application.getAttribute("vector");
+		for(int i=0; i<objects.length; i++){
+			out.print(objects[i]);
+		}
+	%>
 </body>
 </html>
