@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Imprimiendo sin usar JSTL y EL</title>
 </head>
 <body>
 <h1>Imprimiendo Vector de Objetos</h1>
