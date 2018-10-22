@@ -1,6 +1,8 @@
 package controladores;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -57,6 +59,13 @@ public class ServletInit extends HttpServlet {
 		objects[3] = 'T';
 		objects[4] = "cuatro";
 		getServletContext().setAttribute("vector", objects);
+		ArrayList<Object> array = new ArrayList<Object>();
+		array.add("cero");
+		array.add(1);
+		array.add(0.2);
+		array.add('T');
+		array.add("cuatro");
+		getServletContext().setAttribute("array", array);
 		System.out.println("Iniciando Servlet");
 	}
 	
